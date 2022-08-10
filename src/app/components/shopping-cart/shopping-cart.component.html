@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+
+        <h6 class="border-bottom pb-2 mb-0">Carrito</h6>
+
+        <div class="d-flex text-muted pt-3" *ngFor="let product of productList">
+           
+      
+            <img src="{{product.image}}" class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="50" height="50">
+            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+               
+                <div class="d-flex justify-content-between">
+                    <strong class="text-gray-dark">{{product.name}}</strong>
+                     <strong> {{product.price | currency}}</strong>
+                </div>
+                
+                <span class="d-block">{{product.description}}</span>
+                <a href="#">eliminar</a>
+            </div>
+            
+        </div>
+        
+        
+        <p class="d-block text-end mt-3">
+            Subtotal: <b>{{subtotal | currency}}</b>
+        </p>
+    </div>
+</div>
