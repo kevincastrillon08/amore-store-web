@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,14 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

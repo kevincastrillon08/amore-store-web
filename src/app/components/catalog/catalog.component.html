@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col" *ngFor="let product of productList">
       <div class="card" style="width: 18rem;">
-        <img src="{{product.image}}" height="200"
+        <img src="{{product.image}}" height="230"
           class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{product.name}}</h5>
@@ -39,7 +39,7 @@
         <h3 class="mb-0">{{product.name}}</h3>
         <div class="mb-1 text-muted">{{product.price | currency}}</div>
         <p class="card-text mb-auto">{{product.description}}</p>
-        <input type="number" class="form-control" value="0" min="0" max="50" style="width: 60px;">
+        <input type="number" class="form-control" value="0" min="0" max="50" style="height: 60px;">
       </div>
       <div class="col-auto d-none d-lg-block">
         <img src="{{product.image}}" height="200" class="bd-placeholder-img" alt="...">

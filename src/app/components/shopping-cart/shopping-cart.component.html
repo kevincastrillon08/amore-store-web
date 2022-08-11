@@ -16,7 +16,11 @@
                 </div>
                 
                 <span class="d-block">{{product.description}}</span>
-                <a href="#">eliminar</a>
+                <button  (click)="delete(product)" class="btn btn-link text-danger"
+                    placement="end" ngbTooltip="Eliminar producto">
+                    <fa-icon [icon]="faTrashCan"></fa-icon>
+                </button>
+                
             </div>
             
         </div>
